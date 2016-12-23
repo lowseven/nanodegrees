@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AmericanFootBallCounterPoints</string>
+    <string name="touchdownButtonText">Touchdown</string>
+    <string name="extraPointButtonText">One Extra Point</string>
+    <string name="fieldGoalButtonText">Field Goal</string>
+    <string name="defensiveTackleButtonText">Defensive Tackle</string>
+    <string name="initValuePoints">0</string>
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name="resetButtonText">Reset</string>
+</resources>
