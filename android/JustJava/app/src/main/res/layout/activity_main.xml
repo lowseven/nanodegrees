@@ -11,6 +11,41 @@
     android:orientation="vertical"
     tools:context="com.example.lowse.justjava.MainActivity">
 
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textCapWords" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toppings"
+            android:textSize="26sp"/>
+
+        <CheckBox
+            android:id="@+id/whipped_cream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Whipped Cream"
+            android:layout_marginLeft="10dp" />
+
+        <CheckBox
+            android:id="@+id/chcolate_coffee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chocolate"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
     <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -60,7 +95,6 @@
         android:textSize="26sp"
         android:paddingBottom="16sp"
         android:paddingTop="16sp"
-        android:textAllCaps="true"
         android:textColor="@android:color/black" />
 
     <Button
