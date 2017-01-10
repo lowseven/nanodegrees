@@ -7,10 +7,15 @@ package com.example.lowse.justjava;
 * package com.example.android.justjava;
 */
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.NumberFormat;
 
@@ -30,8 +35,26 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        String priceMessage = "Price $" + calculatePrice(quantity) + "\nThank you!";
-        displayMessage(priceMessage);
+        CheckBox cbCoffee = (CheckBox) findViewById(R.id.whipped_cream);
+        CheckBox cbChocolate = (CheckBox) findViewById(R.id.chcolate_coffee);
+        EditText etName = (EditText) findViewById(R.id.name_field);
+
+        String priceMessage = "Name: " +  etName.getText().toString()
+                + "\nAdd whipped cream?" + cbCoffee.isChecked()
+                + "\nAdd chocolate?" + cbChocolate.isChecked()
+                + "\nQuantity:" + quantity
+                + "\nTotal:" + calculatePrice(quantity)
+                + "\nTHANK YOU";
+
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:"));
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Just java order by " + etName.getText().toString());
+        intent.putExtra(Intent.EXTRA_TEXT, priceMessage);
+        if(intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }else {
+            Toast.makeText(this, "nope", Toast.LENGTH_SHORT).show();
+        }
     }
 
     /**
@@ -50,24 +73,50 @@ public class MainActivity extends AppCompatActivity {
         priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
 
-    public void increment(View view){
+    /**
+     * This method is called when the plus button is clicked.
+     */
+    public void increment(View view) {
+        if (quantity == 100) {
+            // Show an error message as a toast
+            Toast.makeText(this, "You cannot have more than 100 coffees", Toast.LENGTH_SHORT).show();
+            // Exit this method early because there's nothing left to do
+            return;
+        }
         quantity = quantity + 1;
         displayQuantity(quantity);
     }
 
+    /**
+     * This method is called when the minus button is clicked.
+     */
     public void decrement(View view) {
+        if (quantity == 1) {
+            // Show an error message as a toast
+            Toast.makeText(this, "You cannot have less than 1 coffee", Toast.LENGTH_SHORT).show();
+            // Exit this method early because there's nothing left to do
+            return;
+        }
         quantity = quantity - 1;
         displayQuantity(quantity);
     }
 
     /**
-     * This method displays the given text on the screen.
+     * Calculates the price of the order.
+     *
      */
-    private void displayMessage(String message) {
-        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText(message);
+    private int calculatePrice() {
+        int price = 5;
+        return price;
     }
-
+    /**
+     * Calculates the price of the order.
+     *
+     * @param quantity is the number of cups of coffee ordered
+     */
+    private int calculatePrice(int quantity, int price) {
+        return price * quantity;
+    }
     /**
      * Calculates the price of the order.
      *
@@ -77,5 +126,4 @@ public class MainActivity extends AppCompatActivity {
         int price = quantity * 5;
         return price;
     }
-
 }

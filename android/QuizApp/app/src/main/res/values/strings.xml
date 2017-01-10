@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Superman Quiz App</string>
+
+    <string name="textview_hint">Answer here...</string>
+
+    <!-- STRINGS TEXTVIEWS -->
+    <string name="q1">What is another name for superman?</string>
+    <string name="q2">What is Superman weekness?</string>
+    <string name="q3">Which of those are the names of superman parents</string>
+    <string name="q4">Where superman gets his superpowers?</string>
+
+    <!-- STRING FIRST ANSWERS -->
+    <string name="q1_redRedeemer">Red Redeemer</string>
+    <string name="q1_maskedAvanger">Masked Avanger</string>
+    <string name="q1_manOfSteel">The Man of Steel</string>
+
+    <!-- STRING SECOND ANSWERS -->
+    <string name="q2_samsonite">Samsonite</string>
+    <string name="q2_hamnite">Hamnite</string>
+    <string name="q2_kryptonite">Kryptonite</string>
+
+    <!-- STRING THIRD ANSWERS -->
+    <string name="q3_kent1">Jonathan Kent</string>
+    <string name="q3_luthor1">Martha Luthor</string>
+    <string name="q3_kent2">loiuse Kent</string>
+    <string name="q3_kent3">Martha Kent</string>
+
+
+    <string name="check_answers_button">Check Answers</string>
+</resources>
