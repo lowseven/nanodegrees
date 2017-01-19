@@ -21,10 +21,14 @@
 
     <!-- STRING THIRD ANSWERS -->
     <string name="q3_kent1">Jonathan Kent</string>
-    <string name="q3_luthor1">Martha Luthor</string>
     <string name="q3_kent2">loiuse Kent</string>
     <string name="q3_kent3">Martha Kent</string>
+    <string name="q3_kent4">Martha Luthor</string>
 
+    <!-- ANSWERS -->
+    <string name="q1_answer">The Man of Steel</string>
+    <string name="q2_answer">Kryptonite</string>
+    <string name="q4_answer">yellow sun</string>
 
     <string name="check_answers_button">Check Answers</string>
 </resources>
