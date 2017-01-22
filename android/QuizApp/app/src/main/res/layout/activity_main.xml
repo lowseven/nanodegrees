@@ -10,7 +10,10 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -68,29 +71,9 @@
                         android:text="@string/q2"/>
 
                    <RadioGroup
-                       android:id="@+id/q2_radiobutton"
+                       android:id="@+id/q2_radio_button"
                        android:layout_width="match_parent"
-                       android:layout_height="wrap_content" />
-
-                       <RadioButton
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:text="@string/q2_hamnite"/>
-
-                       <RadioButton
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:text="@string/q2_kryptonite"/>
-
-                       <RadioButton
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:text="@string/q2_samsonite"/>
-
-                       <RadioGroup
-                           android:id="@+id/q2_radio_button"
-                           android:layout_width="match_parent"
-                           android:layout_height="wrap_content">
+                       android:layout_height="wrap_content" >
 
                            <RadioButton
                                android:id="@+id/q2_answer1"
@@ -143,7 +126,7 @@
                         android:text="@string/q3_kent3"/>
 
                     <CheckBox
-                        android:id="@+id/q3_kent4"
+                        android:id="@+id/q3_luthor1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/q3_kent4"/>
@@ -154,14 +137,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     style="@style/linearLayoutStyle" >
-                    
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/q4"/>
 
                     <EditText
-                        android:id="@+id/q3_answer1"
+                        android:id="@+id/q4_answer1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/textview_hint"
@@ -181,4 +164,5 @@
         android:layout_alignBottom="@id/container"
         android:onClick="submitAnswer"
         android:text="@string/check_answers_button"/>
+
 </RelativeLayout>
