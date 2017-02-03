@@ -31,8 +31,23 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void familyActivityLanchButton(View view) {
+        Intent i= new Intent(this, FamilyActivity.class);
+        startActivity(i);
+    }
+
     public void numbersActivityLunchButton(View view) {
         Intent i = new Intent(this, NumbersActivity.class);
+        startActivity(i);
+    }
+
+    public void colorsActivityLunchButton(View view) {
+        Intent i = new Intent(this, ColorsActivity.class);
+        startActivity(i);
+    }
+
+    public void phrasesActivityLunchButton(View view) {
+        Intent i = new Intent(this, PhrasesActivity.class);
         startActivity(i);
     }
 }

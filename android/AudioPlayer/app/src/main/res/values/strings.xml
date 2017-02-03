@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sample Audio Player</string>
+    <string name="search_songs">Search Songs</string>
+    <string name="current_song">Current a Song</string>
+    <string name="annoying_songs">Annoying Songs</string>
+    <string name="search_button">Search</string>
+    
+    <string name="description_play_button_image">Play an annoying sample</string>
+</resources>

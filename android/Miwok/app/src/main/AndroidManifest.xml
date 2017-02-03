@@ -30,7 +30,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".PhrasesActivity" />
-        <activity android:name=".NumbersActivity" android:label="Numbers"/>
+        <activity android:name=".NumbersActivity" android:label="Numbers">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".FamilyActivity" />
         <activity android:name=".ColorsActivity" />
     </application>

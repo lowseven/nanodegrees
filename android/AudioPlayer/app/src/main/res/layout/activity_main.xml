@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.intellisys.audioplayer.MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical" >
+
+       <TextView
+           style="@style/MainMenuTextView"
+           android:text="@string/search_songs"
+           android:gravity="center"
+           android:onClick="startSearchSongActivity"
+           android:background="@color/blue"/>
+
+       <TextView
+           style="@style/MainMenuTextView"
+           android:text="@string/current_song"
+           android:onClick="startCurrentSongActivity"
+           android:background="@color/teal"/>
+
+       <TextView
+           style="@style/MainMenuTextView"
+           android:text="@string/annoying_songs"
+           android:onClick="startAnnoyingSongActivity"
+           android:background="@color/blue_grey"/>
+
+   </LinearLayout>
+</RelativeLayout>
