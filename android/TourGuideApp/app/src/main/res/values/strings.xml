@@ -1,3 +1,72 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
+    <string name="position_button_link">Position button link</string>
+    <string name="image_attraction">Attraction Image from the IClass should be here</string>
+    <string name="image_coordinate_button_text">Lookup attraction in Google maps</string>
+
+    <!-- LOCATIONS -->
+    <string name="dominican_republic">Dominicana</string>
+    <string name="italy">Italy</string>
+    <string name="spain">Spain</string>
+    <string name="japan">Japan</string>
+
+    <!-- LOCATIONS DESCRIPTION -->
+    <!-- DOMINICAN REPUBLIC -->
+    <string name="bavaro_title">Bavaro</string>
+    <string name="bavaro_coordinates">bavaro+republica+dominicana</string>
+
+    <string name="basilica_title">Basilica Santa Maria</string>
+    <string name="basilica_coordinates">basilica+catedral+santa+maria+la+menor+republica+dominicana</string>
+
+    <string name="macao_title">Macao Beach</string>
+    <string name="macao_coordinates">macao+beach+republica+dominicana</string>
+
+    <string name="duarte_title">Pico Duarte</string>
+    <string name="duarte_coordinates">pico+duarte+republica+dominicana</string>
+
+    <string name="plaza_title">Plaza Espana</string>
+    <string name="plaza_coordinates">plaza+espana+republica+dominicana</string>
+
+
+    <!-- ITALY -->
+    <string name="colosseo_title">Colosseo</string>
+    <string name="colosseo_coordinates">colosseo+roma+italia</string>
+
+    <string name="grande_canale_title">Grande Canale</string>
+    <string name="grande_canale_coordinates">grande+canale+venezia+italia</string>
+
+    <string name="le_alpi_title">Le Alpi</string>
+    <string name="le_alpi_coordinates">le+alpi+italia</string>
+
+    <string name="piazza_san_marco_title">Piazza San Marco</string>
+    <string name="piazza_san_marco_coordinates">piazza+san+marco+venezia+italia</string>
+
+
+    <!-- SPAIN -->
+    <string name="catedral_barcelona_title">Catedral Barcelona</string>
+    <string name="catedral_barcelona_coordinates">catedral+barcelona+espana</string>
+
+    <string name="catedral_toledo_title">Catedral Toledo</string>
+    <string name="catedral_toledo_coordinates">catedral+toledo+espana</string>
+
+    <string name="ibiza_title">Ibiza</string>
+    <string name="ibiza_coordinates">ibiza+espana</string>
+
+    <string name="templo_de_debod_title">Templo de Debod</string>
+    <string name="templo_de_debod_coordinates">templo+de+debod+espana</string>
+
+
+    <!-- SPAIN -->
+    <string name="fuji_title">Fuji Mountain</string>
+    <string name="fuji_coordinates">fuji+mountain+japan</string>
+
+    <string name="itsukushima_title">Itsukushima</string>
+    <string name="itsukushima_coordinates">itsukushima+japan</string>
+
+    <string name="roppongi_title">Roppongi</string>
+    <string name="roppongi_coordinates">roppongi+japan</string>
+
+    <string name="tokyo_tower_title">Tokyo Tower</string>
+    <string name="tokyo_tower_coordinates">tokyo+tower+japan</string>
+
 </resources>

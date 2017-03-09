@@ -8,4 +8,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="LocationsTextView">
+        <item name="android:textSize">@dimen/text_dimension</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:shadowColor">@color/colorShadow</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowDx">8</item>
+        <item name="android:onClick">showPlaces</item>
+    </style>
+
+    <style name="PlaceTextView">
+        <item name="android:textSize">@dimen/text_dimension</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:shadowColor">@color/colorShadow</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowDx">8</item>
+    </style>
 </resources>
