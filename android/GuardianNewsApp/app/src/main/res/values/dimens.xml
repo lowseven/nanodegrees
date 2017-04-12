@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="progress_bar_size">48dp</dimen>
+    <dimen name="item_size">380dp</dimen>
+    <dimen name="item_info_spacing_size">16dp</dimen>
+    <dimen name="section_font_size">16sp</dimen>
+    <dimen name="title_font_size">18sp</dimen>
+
+</resources>

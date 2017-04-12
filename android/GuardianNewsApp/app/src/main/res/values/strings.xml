@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GuardianNewsApp</string>
+    <string name="error_loading_content">Error loading content</string>
+    <string name="error_connectivity">Error Connection</string>
+</resources>

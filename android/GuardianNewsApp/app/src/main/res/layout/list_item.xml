@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_size"
+    android:onClick="openTheBrowser">
+
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/item_info_spacing_size"
+        android:layout_margin="@dimen/item_info_spacing_size"
+        android:background="@drawable/rounded_square"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/section_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ligh_grey"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/section_font_size"
+            tools:text="Section" />
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font_size"
+            android:textStyle="bold"
+            tools:text="Article title" />
+
+    </LinearLayout>
+
+</RelativeLayout>
