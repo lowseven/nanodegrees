@@ -5,6 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/item_size"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp"
     android:onClick="openTheBrowser">
 
 
@@ -18,9 +21,10 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/item_info_spacing_size"
-        android:layout_margin="@dimen/item_info_spacing_size"
-        android:background="@drawable/rounded_square"
+        android:padding="@dimen/item_info_padding_size"
+        android:layout_marginEnd="@dimen/item_info_margin_size"
+        android:layout_marginStart="@dimen/item_info_margin_size"
+        android:background="@drawable/square"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true">
 
